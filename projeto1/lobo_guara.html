@@ -82,7 +82,7 @@
 <img src="assets/datapath_0010.png" height="600">
 <h3 id="0011">0011 </h3>
 <ol>
-<li>Intrução é carregada, tipo: R</li>
+<li>Intrução é carregada, tipo: I</li>
 <li>OP Code é passado para a UC, UC aciona o sinal Jump</li>
 <li>Soma-se o valor de PC com o imediato</li>
 <li>O sinal de Jump emitido pela UC irá sinalizar que o novo valor de PC será PC + imediato.</li>
@@ -144,7 +144,7 @@
 <h3 id="1010">1010 </h3>
 <ol>
 <li>Intrução é carregada, tipo: R</li>
-<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000</li>
+<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0001</li>
 <li>Carrego os valores de rA e rB em A e B, respectivamente</li>
 <li>Os valores de A e B são subtraídos na ULA, resultando em C</li>
 <li>C é salvo no registrador rA</li>
@@ -153,7 +153,7 @@
 <h3 id="1011">1011 </h3>
 <ol>
 <li>Intrução é carregada, tipo: R</li>
-<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000</li>
+<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0010</li>
 <li>Carrego os valores de rA e rB em A e B, respectivamente</li>
 <li>Os valores de A e B são comparados na ULA, resultando em C</li>
 <li>C é salvo no registrador rA</li>
@@ -162,7 +162,7 @@
 <h3 id="1100">1100 </h3>
 <ol>
 <li>Intrução é carregada, tipo: R</li>
-<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000</li>
+<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0011</li>
 <li>Carrego os valores de rA e rB em A e B, respectivamente</li>
 <li>Os valores de A e B são comparados na ULA, resultando em C</li>
 <li>C é salvo no registrador rA</li>
@@ -171,7 +171,7 @@
 <h3 id="1101">1101 </h3>
 <ol>
 <li>Intrução é carregada, tipo: R</li>
-<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000</li>
+<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0100</li>
 <li>Carrego os valores de rA e rB em A e B, respectivamente</li>
 <li>O valor de B é negado resultando em C</li>
 <li>C é salvo no registrador rA</li>
@@ -180,7 +180,7 @@
 <h3 id="1110">1110 </h3>
 <ol>
 <li>Intrução é carregada, tipo: R</li>
-<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000</li>
+<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0101</li>
 <li>Carrego os valores de rA e rB em A e B, respectivamente</li>
 <li>O valor de A é shiftado para esquerda B vezes, resultando em C</li>
 <li>C é salvo no registrador rA</li>
@@ -189,7 +189,7 @@
 <h3 id="1111">1111 </h3>
 <ol>
 <li>Intrução é carregada, tipo: R</li>
-<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000</li>
+<li>OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0110</li>
 <li>Carrego os valores de rA e rB em A e B, respectivamente</li>
 <li>O valor de A é shiftado para direta B vezes, resultando em C</li>
 <li>C é salvo no registrador rA</li>

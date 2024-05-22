@@ -69,7 +69,7 @@ Wesley Ricardo Lamb
 
 ### 0011
 
-1. Intrução é carregada, tipo: R
+1. Intrução é carregada, tipo: I
 2. OP Code é passado para a UC, UC aciona o sinal Jump
 3. Soma-se o valor de PC com o imediato
 4. O sinal de Jump emitido pela UC irá sinalizar que o novo valor de PC será PC + imediato.
@@ -138,7 +138,7 @@ Wesley Ricardo Lamb
 ### 1010
 
 1. Intrução é carregada, tipo: R
-2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000
+2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0001
 3. Carrego os valores de rA e rB em A e B, respectivamente
 4. Os valores de A e B são subtraídos na ULA, resultando em C
 5. C é salvo no registrador rA
@@ -148,7 +148,7 @@ Wesley Ricardo Lamb
 ### 1011
 
 1. Intrução é carregada, tipo: R
-2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000
+2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0010
 3. Carrego os valores de rA e rB em A e B, respectivamente
 4. Os valores de A e B são comparados na ULA, resultando em C
 5. C é salvo no registrador rA
@@ -158,7 +158,7 @@ Wesley Ricardo Lamb
 ### 1100
 
 1. Intrução é carregada, tipo: R
-2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000
+2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0011
 3. Carrego os valores de rA e rB em A e B, respectivamente
 4. Os valores de A e B são comparados na ULA, resultando em C
 5. C é salvo no registrador rA
@@ -168,7 +168,7 @@ Wesley Ricardo Lamb
 ### 1101
 
 1. Intrução é carregada, tipo: R
-2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000
+2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0100
 3. Carrego os valores de rA e rB em A e B, respectivamente
 4. O valor de B é negado resultando em C
 5. C é salvo no registrador rA
@@ -178,7 +178,7 @@ Wesley Ricardo Lamb
 ### 1110
 
 1. Intrução é carregada, tipo: R
-2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000
+2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0101
 3. Carrego os valores de rA e rB em A e B, respectivamente
 4. O valor de A é shiftado para esquerda B vezes, resultando em C
 5. C é salvo no registrador rA
@@ -188,7 +188,7 @@ Wesley Ricardo Lamb
 ### 1111
 
 1. Intrução é carregada, tipo: R
-2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0000
+2. OP Code é passado para a UC, UC aciona o sinal RegWrite e passa o ALUOp = 0110
 3. Carrego os valores de rA e rB em A e B, respectivamente
 4. O valor de A é shiftado para direta B vezes, resultando em C
 5. C é salvo no registrador rA
